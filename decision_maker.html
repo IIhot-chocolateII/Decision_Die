@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styling.css">
+	
+	<title>Decision Delegation</title>
+</head>
+<body>
+
+		
+			<script>
+				$("body").on("click", ".dice", function() {
+				  var roll = Math.floor(Math.random() * 6 + 1);
+				  $(this).attr("class", "dice");
+				  setTimeout(function() {
+				    $(".dice").addClass("roll-" + roll);
+				  }, 1);
+				});
+			</script>
+        	<div> <br> <br><br> <br> <br>
+				  <p style="text-align:center;">Click the dice to roll</p>
+			
+				  
+				</div>
+
+				<div class="container">
+				  <div class="dice">
+				    <div class="one">
+				      <span></span>
+				    </div>
+				    <div class="two">
+				      <span></span>
+				      <span></span>
+				    </div>
+				    <div class="three">
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				    </div>
+				    <div class="four">
+				      <span></span>             
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				    </div>
+				    <div class="five">
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				    </div>
+				    <div class="six">
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				      <span></span>
+				    </div>
+				  </div>
+				</div>
+  
+</body>
+</html>
